@@ -24,7 +24,7 @@ resource group and storage account are set"
 New-Item -Path $modpath -Name README.md -ItemType file -Value $tfReadme
 set-location $modpath
 
-$createModuleDirectory = Read-Host -Prompt "Do you require a modules folder Y or N"
+$createModuleDirectory = Read-Host -Prompt "Do you require a modules folder Y or N?"
 if ($createModuleDirectory -eq 'Y') {
     New-Item -Path . -Name modules -ItemType Directory
 }
