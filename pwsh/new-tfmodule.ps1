@@ -1,6 +1,9 @@
 <#
 .SYNOPSIS
 Creates the basic file structure for a Terraform solution.
+.DESCRIPTION
+This tool create the base module set for an Azure Soluton Terafrom module. You have the option to create amodules
+subdirectory to host additional external modules.
 #>
 $modpath = get-location
  # New-Item -Path . -Name readme.md -ItemType File
